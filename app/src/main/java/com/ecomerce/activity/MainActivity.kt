@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.activity;
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,10 @@ import android.util.Log
 import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ecomerce.*
+import com.ecomerce.adapter.ImageAdapter
+import com.ecomerce.database.SharedPref
+import com.ecomerce.model.Image
 
 open class MainActivity : AppCompatActivity() {
     private lateinit var btnOrang: ImageButton

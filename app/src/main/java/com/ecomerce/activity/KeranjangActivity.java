@@ -1,17 +1,16 @@
-package com.ecomerce;
+package com.ecomerce.activity;
 
 import android.os.Bundle;
 
-import com.ecomerce.Image;import com.ecomerce.ImageAdapter;import com.ecomerce.SharedPref;import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.ecomerce.R;
+import com.ecomerce.model.Image;import com.ecomerce.adapter.ImageAdapter;import com.ecomerce.database.SharedPref;import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
-import android.view.View;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.ecomerce.MainActivity.imageLis;
+import static com.ecomerce.activity.MainActivity.imageLis;
 
 public class KeranjangActivity extends AppCompatActivity {
     List<Image> data = new ArrayList<>();
@@ -56,3 +55,4 @@ public class KeranjangActivity extends AppCompatActivity {
         }
     }
 }
+

@@ -1,14 +1,16 @@
-package com.ecomerce;
+package com.ecomerce.activity;
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.ecomerce.model.Image
+import com.ecomerce.R
+import com.ecomerce.database.SharedPref
 
 class DetailActivityMain1 : AppCompatActivity() {
     private lateinit var btnbackdetailmain1: ImageButton

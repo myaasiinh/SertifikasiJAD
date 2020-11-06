@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.model;
 
 import android.os.Parcel
 import android.os.Parcelable

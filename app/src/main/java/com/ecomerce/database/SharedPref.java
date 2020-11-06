@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.database;
 
 import android.content.Context;
 import android.content.SharedPreferences;

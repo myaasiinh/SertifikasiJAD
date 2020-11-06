@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.model;
 
 import androidx.annotation.NonNull;
 

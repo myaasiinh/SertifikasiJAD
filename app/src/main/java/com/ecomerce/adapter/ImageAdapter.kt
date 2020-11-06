@@ -1,4 +1,4 @@
-package com.ecomerce;
+package com.ecomerce.adapter;
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,11 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.ecomerce.R
+import com.ecomerce.model.Image
 
 class ImageAdapter(
-    private val context: Context,
-    private val images: List<Image>,
-    private val listener: ((Image) -> Unit)? = null
+        private val context: Context,
+        private val images: List<Image>,
+        private val listener: ((Image) -> Unit)? = null
 ) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
     class ImageViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val imageSrc = view.findViewById<ImageView>(R.id.MiliaderIv)

@@ -10,15 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ecomerce">
         <activity
-            android:name=".KeranjangActivity"
+            android:name=".activity.KeranjangActivity"
             android:label="@string/title_activity_keranjang"
             android:theme="@style/NoActionBar">
         </activity>
-        <activity android:name=".DetailActivityMain1" />
-        <activity android:name=".DetailProfilActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.DetailActivityMain1" />
+        <activity android:name=".activity.DetailProfilActivity" />
+        <activity android:name=".activity.MainActivity" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activity.SplashScreen"
             android:noHistory="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
