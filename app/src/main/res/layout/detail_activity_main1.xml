@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9813a">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/barhor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/barhor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9ad3bc">
+
+            <ImageButton
+                android:id="@+id/Activitymain1Ib"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478" />
+            <TextView
+                android:id="@+id/DetailHomeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Halaman Home"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/Activitymain1Ib"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barhor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgcard_activitymain1">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineverticalactivitymain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineverticalactivitymain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinehorizontalactivitymain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinehorizontalactivitymain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".9" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activitymain1circleIv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineverticalactivitymain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".35" />
+
+            <TextView
+                android:id="@+id/main1namaTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.707"
+                app:layout_constraintStart_toStartOf="@id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toTopOf="@+id/guidelineverticalactivitymain3"
+                app:layout_constraintVertical_bias="0.073" />
+
+            <TextView
+                android:id="@+id/main1hobiTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.705"
+                app:layout_constraintStart_toStartOf="@id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toTopOf="@+id/main1namaTv"
+                app:layout_constraintVertical_bias="0.303" />
+
+            <TextView
+                android:id="@+id/main1kekayaanTv"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.705"
+                app:layout_constraintStart_toStartOf="@id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toTopOf="@+id/main1hobiTv"
+                app:layout_constraintVertical_bias="0.523" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Id"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="@+id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toTopOf="@+id/guidelineverticalactivitymain3"
+                app:layout_constraintVertical_bias="0.074" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Nama :"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="@+id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.215" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Harga :"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guidelinehorizontalactivitymain2"
+                app:layout_constraintEnd_toEndOf="@id/guidelineverticalactivitymain2"
+                app:layout_constraintHorizontal_bias="0.049"
+                app:layout_constraintStart_toStartOf="@+id/guidelineverticalactivitymain1"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.435" />
+
+            <Button
+                android:id="@+id/Buybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BELI"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.732"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main1kekayaanTv"
+                app:layout_constraintVertical_bias="0.298" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/barhor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".09"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/customappbar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="0dp"
+            android:background="#9ad3bc"
+            app:layout_constraintBottom_toTopOf="@id/barhor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/ver1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".99"/>
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/ver2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".955"/>
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/ver4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".01"/>
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/ver3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".045"/>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/loghor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.16666667" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/loghor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.8333333" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/Btnorang"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orang"
+                    app:layout_constraintBottom_toBottomOf="@id/loghor2"
+                    app:layout_constraintEnd_toEndOf="@id/ver2"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@id/ver3"
+                    app:layout_constraintTop_toTopOf="@id/loghor1" />
+
+                <TextView
+                    android:id="@+id/halamanhomeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Halaman Home"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/loghor2"
+                    app:layout_constraintEnd_toEndOf="@+id/Btnorang"
+                    app:layout_constraintHorizontal_bias="0.485"
+                    app:layout_constraintStart_toStartOf="@+id/ver3"
+                    app:layout_constraintTop_toTopOf="@id/loghor1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/Btnpesanan"
+                    android:layout_width="40dp"
+                    android:layout_height="55dp"
+                    app:layout_constraintBottom_toBottomOf="@id/loghor2"
+                    app:layout_constraintEnd_toEndOf="@+id/halamanhomeTv"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/ver3"
+                    app:layout_constraintTop_toTopOf="@id/loghor1"
+                    app:layout_constraintVertical_bias="0.454"
+                    app:srcCompat="@drawable/transaksi1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rcyver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".04"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rcyver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".96"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MiliaderRv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/customappbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rcyver1"
+            app:layout_constraintEnd_toStartOf="@id/rcyver2"
+            tools:layout_editor_absoluteY="17dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

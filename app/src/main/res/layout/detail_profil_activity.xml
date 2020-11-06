@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9813a"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CircleDetailProfilIv"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/personlogo"
+        app:layout_constraintBottom_toTopOf="@+id/gdhor1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview4"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/barhor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@id/barhor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9ad3bc">
+
+
+            <ImageButton
+                android:id="@+id/detailProfilIb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"
+                android:contentDescription="TODO" />
+
+            <TextView
+                android:id="@+id/DetailHalamanProfilTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Halaman Toko"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@id/detailProfilIb"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdhor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdhor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".9"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@id/gdhor2"
+        app:layout_constraintLeft_toRightOf="@id/gdver1"
+        app:layout_constraintRight_toLeftOf="@id/gdver2"
+        app:layout_constraintTop_toBottomOf="@id/gdhor1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardview5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgcard_detail_activity"
+            app:layout_constraintGuide_begin="192dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/cdhor1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cdhor1">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/guidelinecardvertical1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffff">
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinecard1horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent=".2"/>
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinecard2horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent=".4"/>
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinecard3horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent=".6"/>
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guidelinecard4horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent=".8"/>
+                    <TextView
+                        android:id="@+id/NamaDetailProfilTv"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Nama:     Jaya Harmoni"
+                        app:layout_constraintBottom_toTopOf="@id/guidelinecardvertical1"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/guidelinecard1horizontal"/>
+
+                    <TextView
+                        android:id="@+id/UsernameDetailProfilTv"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Alamat:     Jalan sawah besar 1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/NamaDetailProfilTv"
+                        app:layout_constraintVertical_bias="0.128" />
+
+                    <TextView
+                        android:id="@+id/EmailDetailProfilTv"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Email:    myaasiinh@gmail.com"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/UsernameDetailProfilTv"
+                        app:layout_constraintVertical_bias="0.115" />
+
+                    <TextView
+                        android:id="@+id/NoHpDetailProfilTv"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="No Hp:     089504054020"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/EmailDetailProfilTv"
+                        app:layout_constraintVertical_bias="0.225" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/cdhor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".069" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/cdhor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent=".200" />
+            <TextView
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Profil Toko"
+                android:textStyle="bold"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="10sp"
+                android:autoSizeTextType="uniform"
+                app:layout_constraintTop_toTopOf="@id/cdhor2"
+                app:layout_constraintBottom_toBottomOf="@id/cdhor3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/lokasitokoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi toko"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/gdver1"
+        app:layout_constraintTop_toBottomOf="@+id/CircleDetailProfilIv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
